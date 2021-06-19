@@ -22,14 +22,10 @@ const resources = {
 i18n
   .init({
     resources,
-    lng: "en",
-    fallbackLng: "en", // use en if detected lng is not available
+    lng: "he",
+    fallbackLng: "he", // use en if detected lng is not available
 
     keySeparator: false, // we do not use keys in form messages.welcome
-
-    interpolation: {
-      escapeValue: false // react already safes from xss
-    }
   });
 
 export default i18n;

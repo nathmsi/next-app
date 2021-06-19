@@ -8,23 +8,18 @@ import storage from 'redux-persist/lib/storage';
 
 
 // reducers
-import TikkounReducer from './reducers/TikkounReducer';
 import PsaumesReducer from './reducers/PsaumesReducer';
-import AppReducer from './reducers/AppReducer';
-
 
 
 const reducers = combineReducers({
-    tikkoun: TikkounReducer,
-    psaumes: PsaumesReducer,
-    app: AppReducer
+    psaumes: PsaumesReducer
 })
 
 
 const rootPersistConfig = {
-    key: 'data-tehilims',
+    key: 'data-tehilims-',
     storage: storage,
-    blacklist: ['tikkoun','psaumes'],
+    blacklist: [],
 };
 
 const composeEnhancers =

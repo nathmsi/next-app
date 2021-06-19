@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import HeaderComponent from '../src/components/Header'
 import styles from '../styles/Home.module.css';
 
-import HomeScreen from '../src/components/Home';
+import Home from '../src/components/Home';
 
-export default function Home() {
+
+
+const HomePage = () => {
   return (
-    <div className={styles.container}>
-      <HeaderComponent />
-      <HomeScreen />
+    <div>
+      <Home />
     </div>
   )
 }
+
+export default HomePage;
