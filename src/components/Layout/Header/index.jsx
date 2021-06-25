@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './index.module.scss';
+
+import DrawerBar from '../DrawerBar';
 
 import {
     AppBar,
@@ -22,6 +24,7 @@ const Header = ({ title, arrowBack }) => {
     const handleBack = () => {
         router.back();
     }
+
     
     return (
         <div className={styles.container}>
@@ -32,7 +35,7 @@ const Header = ({ title, arrowBack }) => {
                 {title}
             </Typography>
             <div className={styles.actions}>
-                {/* <Button color="inherit"></Button> */}
+                <DrawerBar/>
             </div>
         </div>
     )

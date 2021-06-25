@@ -18,7 +18,7 @@ const Home = ({ }) => {
 
     return (
         <div className={styles.container}>
-            <Header title='Tikkoun Haklali' arrowBack />
+            <Header title='תיקון הכללי' arrowBack />
             <MobileStepper showMenuStep={true} length={tikoun?.length} >
                 {({ activeStep }) => {
                     return tikoun?.map(

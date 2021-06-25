@@ -18,10 +18,10 @@ const Home = ({}) => {
 
     return (
         <div className={styles.container}>
-            <Header title='Home' />
+            <Header title='ראשי' />
             <div className={styles.content}>
-                <Button onClick={() => handleChangePage('psaumes')} name="Psaumes" />
-                <Button onClick={() => handleChangePage('tikoun-haklali')} name="Tikoun Haklali" />
+                <Button onClick={() => handleChangePage('psaumes')} name="תהלים" />
+                <Button onClick={() => handleChangePage('tikoun-haklali')} name="תיקון הכללי" />
             </div>
         </div>
     )

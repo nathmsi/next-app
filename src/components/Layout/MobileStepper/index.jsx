@@ -46,14 +46,15 @@ const SwipeableTextMobileStepper = ({ title, showMenuStep, length, children }) =
                 activeStep={activeStep}
                 nextButton={
                     <Button size="small" onClick={handleNext} >
-                        Next
+                        {'הַבָּא'}
                         {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+
                     </Button>
                 }
                 backButton={
                     <Button size="small" onClick={handleBack}>
                         {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                        Back
+                        {'קודם'}
                     </Button>
                 }
                 className={styles.stepper}

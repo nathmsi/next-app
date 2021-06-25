@@ -19,7 +19,7 @@ const Psaumes = ({}) => {
 
     return (
         <div className={styles.container}>
-            <Header title='Psaumes' arrowBack />
+            <Header title='תהלים' arrowBack />
             <MobileStepper  showMenuStep={true} length={psaumes?.length}>
                 {({ activeStep }) => {
                     return psaumes?.map(
