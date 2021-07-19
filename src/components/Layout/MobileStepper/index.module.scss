@@ -14,3 +14,15 @@
     top: 0;
     z-index: 1;
 }
+
+
+.stepperMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #fafafa;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}

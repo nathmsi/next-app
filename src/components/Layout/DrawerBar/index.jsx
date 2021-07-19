@@ -15,7 +15,7 @@ import {
 } from '@material-ui/icons';
 
 const DrawerBar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleClose = () => setIsOpen(false);
     const handleOpen = () => setIsOpen(true);

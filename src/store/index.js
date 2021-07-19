@@ -2,9 +2,6 @@
 import { combineReducers, applyMiddleware, createStore, compose } from 'redux'
 import ReduxThunk from 'redux-thunk'
 
-// persist redux store
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 
 
 // reducers
@@ -16,11 +13,6 @@ const reducers = combineReducers({
 })
 
 
-const rootPersistConfig = {
-    key: 'data-tehilims-',
-    storage: storage,
-    blacklist: [],
-};
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -29,7 +21,7 @@ const composeEnhancers =
       // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
     }) : compose;
 
-const pReducer = persistReducer(rootPersistConfig, reducers);
+// const pReducer = persistReducer(rootPersistConfig, reducers);
 
 const enhancer = composeEnhancers(
     applyMiddleware(ReduxThunk),
@@ -37,11 +29,9 @@ const enhancer = composeEnhancers(
   );
 
 
-const store = createStore(pReducer, enhancer);
-const persistor = persistStore(store);
+const store = createStore(reducers, enhancer);
 
 
 export {
-    persistor,
     store
 }

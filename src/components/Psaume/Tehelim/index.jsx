@@ -8,9 +8,9 @@ const Psaume = ({ psaume, label }) => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.label}>
+            {/* <div className={styles.label}>
                 {label}
-            </div>
+            </div> */}
             {psaume?.map((pasouk, index) => <Pasouk key={index} label={index} value={pasouk} />)}
         </div>
     )

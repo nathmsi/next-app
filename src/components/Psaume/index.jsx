@@ -15,17 +15,18 @@ const Psaumes = ({}) => {
 
     const { psaumes } = useSelector(state => state?.psaumes);
 
-    const { t } = useTranslation();
+    const { t } = useTranslation('common');
+
 
     return (
         <div className={styles.container}>
-            <Header title='תהלים' arrowBack />
+            <Header title={t('Psaumes')} arrowBack />
             <MobileStepper  showMenuStep={true} length={psaumes?.length}>
                 {({ activeStep }) => {
                     return psaumes?.map(
-                        ({ label, content }, index) =>
+                        (content , index) =>
                             (index === activeStep) ?
-                                <Tehelim key={index} psaume={content} label={t(label)} />
+                                <Tehelim key={index} psaume={content} />
                                 : <div key={index} />
                     )
                 }}

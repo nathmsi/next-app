@@ -3,11 +3,11 @@ import {
     SELECTED_PSAUME
 } from '../actions/types'
 
-import PSAUMES from '../../data/psaumes.json';
-import TIKOUN from '../../data/tikkoun_haklali.json';
+import PSAUMES from '../../utils/data/psaumes.json';
+import TIKOUN from '../../utils/data/tikkoun_haklali.json';
 
 const INITIAL_STATE = {
-    psaumes: PSAUMES.data,
+    psaumes: PSAUMES.he,
     tikoun: TIKOUN.tikkun,
     selctedPsaumes: 0
 };

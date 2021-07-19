@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.MuiAutocomplete-input {
+  text-align: center;
+}

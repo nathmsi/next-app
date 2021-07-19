@@ -26,6 +26,10 @@ i18n
     fallbackLng: "he", // use en if detected lng is not available
 
     keySeparator: false, // we do not use keys in form messages.welcome
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
+    }
   });
+
 
 export default i18n;
