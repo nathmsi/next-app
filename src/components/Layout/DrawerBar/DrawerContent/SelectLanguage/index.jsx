@@ -14,7 +14,7 @@ const SelectLanguage = ({}) => {
       <Select
         value={i18n?.language}
         onChange={(event) => {
-          i18n.changeLanguage(event.target.value)
+          i18n?.changeLanguage(event.target.value)
         }}
       >
         {[{

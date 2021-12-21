@@ -18,7 +18,7 @@ const DrawerContent = ({ }) => {
         <div className={styles.container}>
             <Button onClick={() => handleChangePage('psaumes')} name="תהלים" />
             <Button onClick={() => handleChangePage('tikoun-haklali')} name="תיקון הכללי" />
-            <SelectLanguage />
+            {/* <SelectLanguage /> */}
         </div>
     )
 }
